@@ -18,7 +18,7 @@ executors:
 
   ansible-executor:
     docker:
-      - image: demisto/ansible-runner:latest
+      - image: demisto/ansible-runner:1.0.0.2084661
     working_directory: ~/project
 
 jobs:
