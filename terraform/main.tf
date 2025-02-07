@@ -11,10 +11,10 @@ resource "aws_instance" "flask_app" {
     Name = "flask-app-instance"
   }
 
-  provisioner "file" {
-    source      = "../ansible"
-    destination = "/home/ec2-user/ansible"
-  }
+  #   provisioner "file" {
+  #     source      = "../ansible"
+  #     destination = "/home/ec2-user/ansible"
+  #   }
 }
 
 output "ec2_public_ip" {
